@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Accordion UI</title>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/accordion.plugin.js"></script>
+
+
+    <script type="text/javascript">
+        $(function () {
+            $(".accordion").accordion({
+                multiple: false
+            });
+        });
+    </script>
+    <style type="text/css">
+        body {
+            background: #2C2D35;
+        }
+
+        .accTitle {
+            color: #DFDFDF;
+            padding: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .accContent {
+            display: none;
+            color: #BCB9C7;
+            padding: 10px 10px 20px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="accordion">
+        <div class="accTab">
+            <div class="accTitle">Lorem ipsum dolor sit amet</div>
+            <div class="accContent">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed sem sed mi posuere ultrices cursus a lectus. Integer congue finibus felis.
+            </div>
+        </div>
+        <div class="accTab">
+            <div class="accTitle">consectetur adipiscing elit</div>
+            <div class="accContent">Morbi consectetur ex ante, non ullamcorper tortor accumsan non. Mauris ac euismod metus. Pellentesque posuere elit ante, nec mollis enim auctor non.</div>
+        </div>
+        <div class="accTab">
+            <div class="accTitle">Vivamus nibh metus</div>
+            <div class="accContent">Sed gravida arcu quis sem lobortis, eget mollis est faucibus. Praesent facilisis augue nec tempus dictum. Proin gravida nisl et ante hendrerit mollis ut at sapien.</div>
+        </div>
+        <div class="accTab">
+            <div class="accTitle">interdum id diam sit.</div>
+            <div class="accContent">Etiam eu placerat enim, vitae varius nulla. Vestibulum convallis nunc erat, in aliquam est luctus id. Aenean rutrum, arcu ac pretium sodales, ligula ipsum iaculis ex, vel lacinia ante erat a neque. Nullam efficitur aliquet venenatis.</div>
+        </div>
+        <div class="accTab">
+            <div class="accTitle">Mauris in varius sem.</div>
+            <div class="accContent">Mauris in varius sem. Mauris elit risus, malesuada in blandit ut, tincidunt sit amet tortor. Sed sed elementum metus. Morbi non velit elit. Vivamus id dignissim purus, quis ornare elit. Suspendisse ultrices magna augue, eget interdum sapien convallis at.</div>
+        </div>
+    </div>
+</body>
+</html>
